@@ -1,5 +1,12 @@
 trigger:
 - master
+variables:
+
+  # Azure Resource Manager connection created during pipeline creation
+  azureSubscription: '857328a6-f501-4ae4-b917-d7da360e8cc5'
+  
+  # Web app name
+  webAppName: 'node-express-demo-kannan-001'
 
 pool:
   vmImage: 'Ubuntu-latest'
